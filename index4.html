@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA Compatible" content="IE=edge">
+<meta name="viewport" content="width=device width, intitial-scale=1.0">
+<title>SocialBook</title>
+<link rel="stylesheet" href="style4.css">
+<script src="https://kit.fontawesome.com/e2062fc5d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <div class="nav-left">
+        <a href="index4.html">
+            <img src="https://www.accuratereviews.com/wp-content/uploads/2021/10/socialbook.jpg" class="logo"></a>
+        
+        <ul>
+            <li><img src="https://png.pngtree.com/element_our/png/20181227/inbox-vector-icon-png_295004.jpg" class="adjust1"></li>
+            <li><img src="data:image/png;base64,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" class="adjust2"></li>
+            <li><img src="data:image/png;base64,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" class="adjust3"></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <div class="search-box ">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAB4CAMAAABCfAldAAAAZlBMVEX///8AAAD8/Pz4+PigoKCxsbGWlpbs7OxSUlLJycnj4+Pp6ekTExN9fX0jIyPf39+np6ddXV0KCgpKSkrX19c2NjZ0dHRpaWk7Ozvy8vK3t7dBQUEsLCxXV1dvb2+IiIgcHBzAwMC0xFv6AAAEIElEQVR4nO1b6bqiMAyVgiiLLMqqiPj+L3nlemem6SK0NuB8t+c3bQ9JmqZJutlYWFhYWFhYWFj8F3B3URhGLVmbBw83DLyqjI9H54FjHJ8O2yJam9Q/FLdr4nAoa3+3NrMRhX/kyf3BJVtZjm6wj+X0RiRVuiK/YP+a3ROHtSgWs+iNuK2haNefS++B8r44v/SiwG/Uc7ssv7MavQeSYkl+N2V+jhMvp2a31uD3gL8Uv1yPn+N4yxCUepfTwfeyzLv15ZoyJEL9Jn0W0h8VvljMC8hQtD/Kbch9R1J/EHyKvlO2/Jq5dNGM13WM7G0KbsXm/CI+bX0uluhQ+bncBqkmYr6CO3FQN8qBVdh2egxntIhmmLJrzTKojBl0cbH4EcZ1DPzeFeLOMETzNcxCyUx+fGiBFdmcNPT7hAdH3nD4MXI4q4yFu2uubSgCupiD0ljSgcEorgZu4U7RjgIoQgyCUEvKzgy6QyX7mIcWHAkn9fFvGMgsQB0F6hPAW6B5TwM0nGsksMLhzT+cAEgPZTozgHPIuI4joCCtKYCR7A3zg1661ppiR/vCzrSvBiY+I8gSAZixaSOkJx80w/bMwE/K4F6puRtNHwHuC4ZPu5a+/qh76SfI+3YsxY6eu9edhZ7kYpIeQ1BbO/Q2HsyRGwEIaofsIOI1SY/x01rnyIj8FxM0Y4N0xBabpMcQ1L7z0JskMUnv4QfpclKuOwv9l7rOVIK2MTA3CKoro/xgUqHULBKCeMv0xQ7ceTQjERARmU4hgdyAnp8hvYGflAKoR+8cBb60MV1LdunZHa3ZQfZY2xNIAdLNWha+f3uGlwBGqBOywou1+RoyTJ9rBOwVPb4zn2WF+fNBeQH4gxgZQpiEVLUhJn2MUS2B2R9H8V4LM+klAj82/9YoKZmpDyBk3zZclUklu9LC9PYFKYvOVCEUdnIFR2qH5BNg6zizGTL88Mp1bCVsnikRthiGY4HfSzErzbqAtmwF3HBOAYDrRuknzT1tmCExTpHkBz3LsJyI6zyuNw5PwSMIX0OvX0gkEPQnIbctFHy3YHKQ9I4VqzRWCJui+jN3roTZSfTlCOTmFLY+/SPGvVeEO5cQ4rZRGvjlq8ZHZBnK+/Kaa13X+V7a17MUQ2+SwCSQtSxonlEFsgzvE62168swkm7RT5Ghq9jjeObNArvRjO8pkmPsT+IZYjfruVkn4CJA8zyvl5fhZjenVXn4e8qswHBDvIndUtNpNp6h+bo2h7boBU8hvnHs/BSW5jmG9SJvT0ggaAhN+kxwO+dCjcVedLjR3a/qPL9e87w+eEEruTazMlz8IQKZ0hnDEDX+1wPQcrxwi/8s0DJE6oN7E5QMP+LVE4/zTzDULfpCQgVp/bh7xbLL1keAhB+4fy0sLCwsLCwsfie+ADK4KZHhSLFwAAAAAElFTkSuQmCC">
+            <input type="text" placeholder="search">
+        </div>
+
+            <div class="user-profile-icon online" onclick="settingsMenuToggle()">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+            </div>
+    </div>
+<!----------------------dropdown-settings-menu-------------------------------------->
+    <div class="settings-menu">
+        <div id="dark-btn" >
+            <span></span>
+        </div>
+        <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+               <a href="profile.html"> my profile</a>
+            </div>
+        </div>
+        <hr>
+        <div class="user-profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+            <div>
+                <p>Give feedback</p>
+           <a href="#"> Help us improve on our work</a>
+        </div>
+    </div>
+    <hr>
+    <div class="settings-links">
+    <img src="https://static.vecteezy.com/system/resources/previews/000/485/808/original/setting-line-black-icon-vector.jpg" class="settings-icon" width="40px" > 
+        <a href="#">settings & privacy <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png"
+             width="10px"></a>
+
+    </div>
+    <div class="settings-links">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmrHWublL_1wE5Aamy4y82KEn0qkb_Kmwzw&usqp=CAU" class="settings-icon" width="40px" > 
+            <a href="#">help and support <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png"
+                 width="10px"></a>
+    
+        </div>
+        <div class="settings-links">
+            <img src="https://www.designedtoinspire.com/blog/wp-content/uploads/2019/05/accessibility-symbol.png" class="settings-icon" width="40px" > 
+                <a href="#">Display and accessbility<img src="https://cdn-icons-png.flaticon.com/512/25/25606.png"
+                     width="10px"></a>
+        
+            </div>
+            <div class="settings-links">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJu5NJ9N4wIkI_k-6WTve8e1f1FnBIKYy2jA&usqp=CAU" class="settings-icon" width="40px" > 
+                    <a href="#">logout <img src="https://cdn-icons-png.flaticon.com/512/25/25606.png"
+                         width="10px"></a>
+            
+                </div>
+    
+        </div>
+        
+    </div>
+
+
+</nav>
+
+<div class="container">
+    <!-----------------left-side--------------------------->
+    <div class="left-side">
+        <div class="majors">
+            <a href="#"><img src="https://www.freeiconspng.com/thumbs/news-icon/news-icon-38.png"> latest news </a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhdRspCI2VD89N-5od97HidCa2vdmnl-tFpVmsawZFDcduyTqr3hFtS574ik7KOu6Mts&usqp=CAU"> Friends </a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4PfOpXupxrGDuoI3LGRZHSBri9Bt6_KHww&usqp=CAU"> Group </a>
+            <a href="#"><img src="https://www.pngitem.com/pimgs/m/529-5295750_facebook-marketplace-01-marketplace-facebook-logo-png-transparent.png"> Market place </a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBLjzgTuBQpCWa1KWOwFJSjPhSeqiQAclLA&usqp=CAU"> Watch  </a>
+            <a href="#">See More</a>
+        </div>
+        <div class="shortcuts">
+        <p>Your Shortcuts</p>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkhLn32wD7tIE5EexaSp1Q_wbBrYg2deaqQ&usqp=CAU"> Web Developers</a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOJ0z6TeeF3WVib9mjMg2pjmT5A08sASkuyA&usqp=CAU"> Web Development course</a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIXkIGwOQ135C-LKQxMRL0SRQhAVpTVnSO76eUb1sT32K2IzEb8gGt6ceLuaisd3tnDo&usqp=CAU"> Full stack Developers </a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpILwOlrHu8abnRNDoizd46wXOfVlng9Em9w&usqp=CAU"> Website Experts </a>
+
+        </div>
+         </div>
+   <!-------------------main-content----------------------->
+    <div class="Main-content"> 
+        <div class="story-gallery">
+            <div class="story story1">
+                <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-plus-circle-thin.png">
+                <p>Post Story</p>
+            </div>
+            <div class="story story2">
+                <img src="https://media.istockphoto.com/id/906808234/photo/handsome-man.jpg?s=612x612&w=0&k=20&c=Ec8IY-ETslaS56vmO77BJyEOpPM1hzJlLbs6xeKRoAc=">
+                <p>George</p>
+            </div>
+            <div class="story story3">
+                <img src="https://media.licdn.com/dms/image/D5603AQGHAV1WzO4olw/profile-displayphoto-shrink_800_800/0/1666550760029?e=2147483647&v=beta&t=uyZCUXn3b0qn094AADXPzS4lwtAWo_pwvzRAez-vawM">
+                <p>Tony</p>
+            </div>
+            <div class="story story4">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/003/492/047/small/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg">
+                <p>Sharon</p>
+            </div>
+            <div class="story story5">
+                <img src="https://t4.ftcdn.net/jpg/02/82/72/09/360_F_282720917_7ZtAfEqEfA6CRT66imV9avGWXEg9w6Jt.jpg">
+                <p>Melissa</p>
+            </div>  
+        </div>
+        <div class="rp-container">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <small>public  <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+        </div>
+        <div class="post-container">
+            <textarea rows="3" placeholder="whats's on your mind Nick"></textarea>
+            <div class="add-post-links">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcehabhsM4XBokqyvdLx9iGQxKlCKe32yiQ&usqp=CAU">live video</a> 
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0e_agpo3SqjEpcv9zNTTB3wwG_zMQg5lk2P82HNuOWQ&s">photos/videos</a> 
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9PWbm6YQStIj5FGdBjAGGWim6m3cD3-l1Q&usqp=CAU">feeling/activity</a> 
+            </div>
+         </div> 
+    </div>
+
+
+    <div class="up-container">
+        <div class="post-row">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <span> July 28 2023, 1:12pm</span>
+            </div>
+        </div>  
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        
+    <p class="post-text"> Learn to love web develpment and UI designs at @easyTutorials by subscribing to <span>@easyTutorials.</span>  <a href="#">#@easytutorials</a> <a href="#">#YouTubeChannel</a></p>
+    <img src="https://www.affordablecollegesonline.org/wp-content/uploads/2021/02/shutterstock_124814944.jpg" class="post-image">
+    <div class="post-row">
+        <div class="activity-icons">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYwj1224kz8u8fDk14HGLeV-T_ijXycDlQ&usqp=CAU">120</div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzjxSVCjejRqZkRTpVLasxFELBw3nTHBFMA&usqp=CAU">45</div>
+        <div><img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/003/small/share-icon-free-vector.jpg">20</div>
+              
+        </div>
+        <div class="post-profile-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s"><i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    </div>
+
+    
+    <div class="up-container">
+        <div class="post-row">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <span> July 28 2023, 1:12pm</span>
+            </div>
+        </div>  
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        
+    <p class="post-text"> like and share this video with your friends, tag  <span>@easyTutorials.</span> facebook page on your post . Ensure to ask anything you feel like asking in  the comments section. <a href="#">#@easytutorials</a> <a href="#">#YouTubeChannel</a></p>
+    <img src="https://static.vecteezy.com/system/resources/previews/001/253/783/non_2x/happy-friends-in-the-park-looking-at-tablet-photo.jpg" class="post-image">
+    <div class="post-row">
+        <div class="activity-icons">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYwj1224kz8u8fDk14HGLeV-T_ijXycDlQ&usqp=CAU">120</div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzjxSVCjejRqZkRTpVLasxFELBw3nTHBFMA&usqp=CAU">45</div>
+        <div><img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/003/small/share-icon-free-vector.jpg">20</div>
+              
+        </div>
+        <div class="post-profile-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s"><i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    </div>
+    <div class="up-container">
+        <div class="post-row">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <span> July 28 2023, 1:12pm</span>
+            </div>
+        </div>  
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        
+    <p class="post-text"> like and share this video with your friends, tag  <span>@easyTutorials.</span> facebook page on your post . Ensure to ask anything you feel like asking in  the comments section. <a href="#">#@easytutorials</a> <a href="#">#YouTubeChannel</a></p>
+    <img src="https://static.vecteezy.com/system/resources/previews/001/253/783/non_2x/happy-friends-in-the-park-looking-at-tablet-photo.jpg" class="post-image">
+    <div class="post-row">
+        <div class="activity-icons">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYwj1224kz8u8fDk14HGLeV-T_ijXycDlQ&usqp=CAU">120</div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzjxSVCjejRqZkRTpVLasxFELBw3nTHBFMA&usqp=CAU">45</div>
+        <div><img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/003/small/share-icon-free-vector.jpg">20</div>
+              
+        </div>
+        <div class="post-profile-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s"><i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    </div>
+    <div class="up-container">
+        <div class="post-row">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <span> July 28 2023, 1:12pm</span>
+            </div>
+        </div>  
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        
+    <p class="post-text"> like and share this video with your friends, tag  <span>@easyTutorials.</span> facebook page on your post . Ensure to ask anything you feel like asking in  the comments section. <a href="#">#@easytutorials</a> <a href="#">#YouTubeChannel</a></p>
+    <img src="https://img.freepik.com/free-photo/people-business-teamwork-cooperation-concept-two-african-american-corporate-workers-formal-clothing-working-together-common-presentation-generic-laptop-computer-modern-office_273609-321.jpg?w=360" class="post-image">
+    <div class="post-row">
+        <div class="activity-icons">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYwj1224kz8u8fDk14HGLeV-T_ijXycDlQ&usqp=CAU">120</div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzjxSVCjejRqZkRTpVLasxFELBw3nTHBFMA&usqp=CAU">45</div>
+        <div><img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/003/small/share-icon-free-vector.jpg">20</div>
+              
+        </div>
+        <div class="post-profile-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s"><i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    </div>
+    <div class="up-container">
+        <div class="post-row">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s">
+                <div>
+                    <p>Nick Amstrong</p>
+                <span> July 28 2023, 1:12pm</span>
+            </div>
+        </div>  
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        
+    <p class="post-text"> like and share this video with your friends, tag  <span>@easyTutorials.</span> facebook page on your post . Ensure to ask anything you feel like asking in  the comments section. <a href="#">#@easytutorials</a> <a href="#">#YouTubeChannel</a></p>
+    <img src="https://media.licdn.com/dms/image/C4E0DAQG4XjLQDHP30A/learning-public-crop_288_512/0/1623949242952?e=2147483647&v=beta&t=nuA66O1VvbKr8NtyNR9dB24g8RVgY2XUriHkQ-W871M" class="post-image">
+    <div class="post-row">
+        <div class="activity-icons">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRYwj1224kz8u8fDk14HGLeV-T_ijXycDlQ&usqp=CAU">120</div> 
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzjxSVCjejRqZkRTpVLasxFELBw3nTHBFMA&usqp=CAU">45</div>
+        <div><img src="https://static.vecteezy.com/system/resources/thumbnails/001/505/003/small/share-icon-free-vector.jpg">20</div>
+              
+        </div>
+        <div class="post-profile-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPieY7zCXw1JN3Ch0CKksn4ZG4Dwpn-XuCy0gTbl3LfZaPZBqS662JrBFxQ&s"><i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    </div>
+    <button type="button" class="load-more-buttn">load more</button>
+    
+    </div>
+    <!-------------------Right-side------------------------>
+  
+    <div class="Right-side"> 
+
+
+        <div class="Sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+
+        </div>
+        <div class="event">
+            <div class="left-event">
+                <h3>18</h3>
+                <span>March</span>
+            </div> 
+            <div class="Right-event">
+                <h4>Social Media</h4>
+                <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+        <div class="event">
+            <div class="left-event">
+                <h3>22</h3>
+                <span>April</span>
+            </div> 
+            <div class="Right-event">
+                <h4>Mobile Marketing</h4>
+                <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+        <div>
+            <div class="Sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="#">close</a>
+                
+        
+            </div>
+            <img src="https://www.bu.edu/met/files/2020/08/msa-hero-1200x500.jpg" class="sidebar-ads">
+        </div>
+        
+        <div class="Sidebar-title">
+            <h4>Conversations</h4>
+            <a href="#">Hidechat</a>
+    
+        </div>
+        <div class="online-list">
+            <div class="online">
+            <img src="https://media.istockphoto.com/id/906808234/photo/handsome-man.jpg?s=612x612&w=0&k=20&c=Ec8IY-ETslaS56vmO77BJyEOpPM1hzJlLbs6xeKRoAc=">
+            </div>
+            <p> George Badon</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/003/492/047/small/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg">
+            </div>
+            <p> Sharon Timber</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+            <img src="https://t4.ftcdn.net/jpg/02/82/72/09/360_F_282720917_7ZtAfEqEfA6CRT66imV9avGWXEg9w6Jt.jpg">
+            </div>
+            <p> Melissa Diamond</p>
+        </div>
+       
+    
+    
+       </div>
+
+      
+    
+</div>
+<div class="footer">
+    <p> Copyright 2023 - study web development</p>
+</div>
+<script src="script1.js"></script>
+</body>
+
+</html>
